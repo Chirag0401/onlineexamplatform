@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
-CREATE TABLE `admin` (
+CREATE TABLE `heroku_54f84995330df97`.`admin` (
   `admin_id` int(11) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(500) NOT NULL
@@ -36,7 +36,7 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`admin_id`, `email`, `password`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `admin` (`admin_id`, `email`, `password`) VALUES
 (1, 'sunnygkp10@gmail.com', '123456'),
 (2, 'admin@admin.com', 'admin');
 
@@ -46,7 +46,7 @@ INSERT INTO `admin` (`admin_id`, `email`, `password`) VALUES
 -- Table structure for table `answer`
 --
 
-CREATE TABLE `answer` (
+CREATE TABLE `heroku_54f84995330df97`. `answer` (
   `qid` text NOT NULL,
   `ansid` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -55,7 +55,7 @@ CREATE TABLE `answer` (
 -- Dumping data for table `answer`
 --
 
-INSERT INTO `answer` (`qid`, `ansid`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `answer` (`qid`, `ansid`) VALUES
 ('55892169bf6a7', '55892169d2efc'),
 ('5589216a3646e', '5589216a48722'),
 ('558922117fcef', '5589221195248'),
@@ -80,7 +80,7 @@ INSERT INTO `answer` (`qid`, `ansid`) VALUES
 -- Table structure for table `feedback`
 --
 
-CREATE TABLE `feedback` (
+CREATE TABLE `heroku_54f84995330df97`. `feedback` (
   `id` text NOT NULL,
   `name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE `feedback` (
 -- Dumping data for table `feedback`
 --
 
-INSERT INTO `feedback` (`id`, `name`, `email`, `subject`, `feedback`, `date`, `time`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `feedback` (`id`, `name`, `email`, `subject`, `feedback`, `date`, `time`) VALUES
 ('55846be776610', 'testing', 'sunnygkp10@gmail.com', 'testing', 'testing stART', '2015-06-19', '09:22:15pm'),
 ('5584ddd0da0ab', 'netcamp', 'sunnygkp10@gmail.com', 'feedback', ';mLBLB', '2015-06-20', '05:28:16am'),
 ('558510a8a1234', 'sunnygkp10', 'sunnygkp10@gmail.com', 'dl;dsnklfn', 'fmdsfld fdj', '2015-06-20', '09:05:12am'),
@@ -108,7 +108,7 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `subject`, `feedback`, `date`, `t
 -- Table structure for table `history`
 --
 
-CREATE TABLE `history` (
+CREATE TABLE `heroku_54f84995330df97`. `history` (
   `email` varchar(50) NOT NULL,
   `eid` text NOT NULL,
   `score` int(11) NOT NULL,
@@ -122,7 +122,7 @@ CREATE TABLE `history` (
 -- Dumping data for table `history`
 --
 
-INSERT INTO `history` (`email`, `eid`, `score`, `level`, `sahi`, `wrong`, `date`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `history` (`email`, `eid`, `score`, `level`, `sahi`, `wrong`, `date`) VALUES
 ('sunnygkp10@gmail.com', '558921841f1ec', 4, 2, 2, 0, '2015-06-23 09:31:26'),
 ('sunnygkp10@gmail.com', '558920ff906b8', 4, 2, 2, 0, '2015-06-23 13:32:09'),
 ('avantika420@gmail.com', '558921841f1ec', 4, 2, 2, 0, '2015-06-23 14:33:04'),
@@ -138,7 +138,7 @@ INSERT INTO `history` (`email`, `eid`, `score`, `level`, `sahi`, `wrong`, `date`
 -- Table structure for table `options`
 --
 
-CREATE TABLE `options` (
+CREATE TABLE `heroku_54f84995330df97`. `options` (
   `qid` varchar(50) NOT NULL,
   `option` varchar(5000) NOT NULL,
   `optionid` text NOT NULL
@@ -148,7 +148,7 @@ CREATE TABLE `options` (
 -- Dumping data for table `options`
 --
 
-INSERT INTO `options` (`qid`, `option`, `optionid`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `options` (`qid`, `option`, `optionid`) VALUES
 ('55892169bf6a7', 'usermod', '55892169d2efc'),
 ('55892169bf6a7', 'useradd', '55892169d2f05'),
 ('55892169bf6a7', 'useralter', '55892169d2f09'),
@@ -225,7 +225,7 @@ INSERT INTO `options` (`qid`, `option`, `optionid`) VALUES
 -- Table structure for table `questions`
 --
 
-CREATE TABLE `questions` (
+CREATE TABLE `heroku_54f84995330df97`. `questions` (
   `eid` text NOT NULL,
   `qid` text NOT NULL,
   `qns` text NOT NULL,
@@ -237,7 +237,7 @@ CREATE TABLE `questions` (
 -- Dumping data for table `questions`
 --
 
-INSERT INTO `questions` (`eid`, `qid`, `qns`, `choice`, `sn`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `questions` (`eid`, `qid`, `qns`, `choice`, `sn`) VALUES
 ('558920ff906b8', '55892169bf6a7', 'what is command for changing user information??', 4, 1),
 ('558920ff906b8', '5589216a3646e', 'what is permission for view only for other??', 4, 2),
 ('558921841f1ec', '558922117fcef', 'what is command for print in php??', 4, 1),
@@ -263,7 +263,7 @@ INSERT INTO `questions` (`eid`, `qid`, `qns`, `choice`, `sn`) VALUES
 -- Table structure for table `quiz`
 --
 
-CREATE TABLE `quiz` (
+CREATE TABLE `heroku_54f84995330df97`. `quiz` (
   `eid` text NOT NULL,
   `title` varchar(100) NOT NULL,
   `sahi` int(11) NOT NULL,
@@ -279,7 +279,7 @@ CREATE TABLE `quiz` (
 -- Dumping data for table `quiz`
 --
 
-INSERT INTO `quiz` (`eid`, `title`, `sahi`, `wrong`, `total`, `time`, `intro`, `tag`, `date`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `quiz` (`eid`, `title`, `sahi`, `wrong`, `total`, `time`, `intro`, `tag`, `date`) VALUES
 ('558920ff906b8', 'Linux : File Managment', 2, 1, 2, 5, '', 'linux', '2015-06-23 09:03:59'),
 ('558921841f1ec', 'Php Coding', 2, 1, 2, 5, '', 'PHP', '2015-06-23 09:06:12'),
 ('5589222f16b93', 'C++ Coding', 2, 1, 2, 5, '', 'c++', '2015-06-23 09:09:03'),
@@ -293,7 +293,7 @@ INSERT INTO `quiz` (`eid`, `title`, `sahi`, `wrong`, `total`, `time`, `intro`, `
 -- Table structure for table `rank`
 --
 
-CREATE TABLE `rank` (
+CREATE TABLE `heroku_54f84995330df97`. `rank` (
   `email` varchar(50) NOT NULL,
   `score` int(11) NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -303,7 +303,7 @@ CREATE TABLE `rank` (
 -- Dumping data for table `rank`
 --
 
-INSERT INTO `rank` (`email`, `score`, `time`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `rank` (`email`, `score`, `time`) VALUES
 ('sunnygkp10@gmail.com', 9, '2015-06-24 03:22:38'),
 ('avantika420@gmail.com', 8, '2015-06-23 14:49:39'),
 ('mi5@hollywood.com', 4, '2015-06-23 15:12:56'),
@@ -315,7 +315,7 @@ INSERT INTO `rank` (`email`, `score`, `time`) VALUES
 -- Table structure for table `user`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `heroku_54f84995330df97`. `user` (
   `name` varchar(50) NOT NULL,
   `gender` varchar(5) NOT NULL,
   `college` varchar(100) NOT NULL,
@@ -328,7 +328,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES
+INSERT INTO `heroku_54f84995330df97`. `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES
 ('Avantika', 'F', 'KNIT sultanpur', 'avantika420@gmail.com', 7785068889, 'e10adc3949ba59abbe56e057f20f883e'),
 ('Mark Zukarburg', 'M', 'Stanford', 'ceo@facebook.com', 987654321, 'e10adc3949ba59abbe56e057f20f883e'),
 ('Komal', 'F', 'KNIT sultanpur', 'komalpd2011@gmail.com', 7785068889, 'e10adc3949ba59abbe56e057f20f883e'),
@@ -346,13 +346,13 @@ INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VAL
 --
 -- Indexes for table `admin`
 --
-ALTER TABLE `admin`
+ALTER TABLE `heroku_54f84995330df97`. `admin`
   ADD PRIMARY KEY (`admin_id`);
 
 --
 -- Indexes for table `user`
 --
-ALTER TABLE `user`
+ALTER TABLE `heroku_54f84995330df97`. `user`
   ADD PRIMARY KEY (`email`);
 
 --
@@ -362,7 +362,7 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for table `admin`
 --
-ALTER TABLE `admin`
+ALTER TABLE `heroku_54f84995330df97`. `admin`
   MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
